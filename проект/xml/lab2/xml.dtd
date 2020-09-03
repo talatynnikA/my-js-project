@@ -1,0 +1,10 @@
+<!DOCTYPE main[
+<!ELEMENT main (uniname, reqgpa, amount, city)>
+<!ELEMENT uniname (#PCDATA)>
+
+<!ELEMENT  reqgpa (#PCDATA)>
+<!ELEMENT amount (#PCDATA)>
+<ELEMENT city (#PCDATA)>
+]>
+
+

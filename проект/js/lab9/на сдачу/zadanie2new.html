@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+	<meta charset="utf-8">
+	<title>2</title>
+</head>
+<style type="text/css">
+ 	 body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+#myImage { 
+	position: absolute; 
+
+}
+
+ </style>
+<body>
+	<br><input type="button" style="width: 300px" onclick="window.location='../../../main/main.html'" value="На главную"/><br>
+
+	<div id="myImage">
+		<img src="pixels.jpg" width="150" height="100" >
+	</div>
+<script type="text/javascript">
+var curPosX = 1500;
+var interval; 
+var n = 10; 
+
+ var myImage = document.getElementById("myImage"); 
+interval = setInterval(left, 10); 
+function left() { 
+myImage.style.left = (curPosX -= n) + "px";  
+if (curPosX <= 0) 
+{  
+clearInterval(interval);
+interval = setInterval(right, 10); 
+} 
+} 
+function right (){
+  myImage.style.left = (curPosX += n) + "px";
+  if (curPosX >= 1500){
+    clearInterval(interval);
+  }
+}
+</script>
+
+</body>
+</html>

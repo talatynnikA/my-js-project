@@ -1,0 +1,103 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+<link rel="shortcut icon" href="../roket.ico" type="image/png">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+  <title>4</title> 
+  <meta charset="UTF-8"> 
+  <style type="text/css">
+ 	 body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+ div {
+ 	font-family: fantasy;
+ 	font-size:100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+   }
+  
+  #paint {
+  border: 2px solid black;
+  height: 500px;
+  width: 400px;
+}
+
+ </style>
+</head> 
+<body> 
+  <br><input type="button" style="width: 300px" onclick="window.location='../../../../main/main.html'" value="На главную"/><br>
+
+  <div id="graph"> 
+      <form class=borderform name=borderform> 
+      <input type="radio" name=course value="1" checked="checked"> y=x<sup>2</sup> 
+      <input type="radio" name=course value="2" /> y=x<sup>3</sup> 
+      <input type="radio" name=course value="3" /> y=sin(x) 
+      <input type="radio" name=course value="4" /> y=cos(x) 
+      <br> 
+    </form> 
+    <button id='button'>Построить график</button> 
+  </div> 
+  <div id=paint></div> 
+
+  <script>
+  	let graphic = document.getElementById('paint')
+
+$(document).ready(function() {
+  $('#button').click( function() {
+    let checkedBox
+    let radio = document.getElementsByName('course')
+    
+    document.getElementById("button").onclick = function() {
+      for (var i = 0; i < radio.length; i++) {
+        if (radio[i].checked) {
+          checkedBox = radio[i].value
+        }
+        graphic.innerHTML = " "
+
+        switch (checkedBox) {
+          case '1':
+            for (let x = -14; x <= 14; x += 0.1) {
+              let y1 = x * x
+              let x1 = x * 10
+              let oX = 200 - x1
+              let oY = 350 - y1
+              graphic.innerHTML += "<div style='position: absolute; width: 2px; background-color: white; height: 2px; left: " + oX + "px; top: " + oY + "px'></div>"
+            }
+          break;
+
+          case '2':
+            for (let x = 5.5; x >= -5.5; x -= 0.1) {
+              let y1 = x * x * x
+              let x1 = x * (-12)
+              let oX = 200 - x1
+              let oY = 300 - y1
+              graphic.innerHTML += "<div style='position: absolute; width: 2px; background-color: black; height: 2px; left: " + oX + "px; top: " + oY + "px'></div>"
+            } 
+          break
+
+          case '3':
+            for (let x = 10; x >= -10; x -= 0.1) {
+              let y1 = Math.sin(x) * 50
+              let x1 = x * (18)
+              let oX = 200 - x1
+              let oY = 300 - y1
+              graphic.innerHTML += "<div style='position: absolute; width: 2px; background-color: yellow; height: 2px; left: " + oX + "px; top: " + oY + "px'></div>"
+            }
+          break;
+
+          case '4':
+            for (let x = 10; x >= -10; x -= 0.1) {
+              let y1 = Math.cos(x) * 50
+              let x1 = x * (18)
+              let oX = 200 - x1
+              let oY = 300 - y1
+              graphic.innerHTML += "<div style='position: absolute; width: 2px; background-color: pink; height: 2px; left: " + oX + "px; top: " + oY + "px'></div>"
+            }
+          break
+        }
+      }
+    }
+  })
+})
+  </script>
+</body> 
+</html>

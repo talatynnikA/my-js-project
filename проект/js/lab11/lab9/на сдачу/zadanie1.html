@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="../roket.ico" type="image/png">
+	<meta charset="utf-8">
+	<title>1</title>
+</head>
+<style type="text/css">
+ 	 body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+ div {
+ 	font-family: fantasy;
+ 	font-size: 390%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+   }
+  
+ </style>
+<body>
+	<br><input type="button" style="width: 300px" onclick="window.location='../../../../main/main.html'" value="На главную"/><br>
+
+	<div id="image">
+		<image src="hollywood3.jpg" width="480" height="480">
+	</div>
+
+	<div id="text">YWOOD</div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script type="text/javascript">
+
+$(document).ready(function(){
+		$("div#image").draggable();
+		$("div#text").draggable();
+
+});
+	</script>
+</body>
+</html>

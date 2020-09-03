@@ -1,0 +1,50 @@
+root {
+	 background-color: #3366CC; /* Цвет фона веб-страницы */
+	 border-color:#ff69b4;
+}
+group {  display:block; 
+					text-align:center; 
+					margin:10px 20px 10px 20px; 
+					margin-top:12pt;
+					 border-style:double; 
+					 border-color:#fff0f5; 
+					 font-size:15pt
+					color: #fff0f5; /* Цвет фона веб-страницы */}
+
+faculty { font-family: fantasy;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+ 		font-style:italic;
+  		text-align:center} 
+
+  SURNAME {  font-family: monospace;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+
+  	display:block; 
+  		text-align:center;
+  		 font-weight:bold; 
+  	 	border-top:double; 
+  		 border-color:#7cfc00} 
+
+ NAME {  font-family: cursive;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+ 		    display:block; 
+ 		text-align:center; 
+ 		border-top:double;
+ 	 	border-color:#ffa07a} 
+
+ MARK {  font-family: sans-serif ;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+ 		    display:block;
+  			text-align:center;
+  			 border-top:double;
+   			 border-color:#ffe4b5} 
+
+ YEAR {  font-family: fantasy;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+ 		    display:block; 
+			text-align:center;
+ 			border-top:double; 
+ 			border-color:#8C0088} 
+
+
+ 

@@ -1,0 +1,49 @@
+<html>
+	<head>
+		 <link rel="shortcut icon" href="../roket.ico" type="image/png">
+		<meta charset = "utf-8" />
+		<script type = "text/javascript">
+			function processFiles(files)
+			{ 
+		        var file = files[0];
+
+		        var reader = new FileReader();
+		        reader.onload = function (e) 
+				{
+		       		document.write(reader.result);
+		        }
+		        reader.readAsText(file);
+		      
+			if (window.DOMParser)
+		        {  
+		        Dparser = new DOMParser();
+		        xmlDOC = Dparser.parserFromString(xml, "text/xml");
+		        }
+		        else
+		        {
+	        	xmlDOC = new ActiveXObject("Microsoft.XMLDOM"); 
+	        	xmlDocum.async = false;
+		        xmlDocum.loadXML(xml);
+		        }
+
+		        facultyList = xmlDocum.getElementsByTagName("root");
+		        for (var i = 0; i < facultyList.length; i++) {
+		        var fitName = facultyList[i].getElementByTagName("group")[0].innerHTML;
+		        output.innerHTML += "<br>" + fitName ;
+		        }
+		   	}
+		</script>
+		</head>
+<style type="text/css">
+    body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+</style>
+		<body>
+		 <br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+		<input type = "file" onchange = "processFiles(this.files)">
+		</body>
+</html>

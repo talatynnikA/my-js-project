@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>
+веб-страница
+</TITLE>
+ 
+     <style>
+        a:hover {
+        color: #ff0000;
+                }
+      table {
+  border-collapse: collapse; <!--Устанавливает, как отображать границы вокруг ячеек таблицы-->
+  margin-bottom:40px; <!--отсутп между таблицами  -->
+}
+
+table, th, td {
+
+  border: 3px solid red;<!--разделители сделаны с пом-ю border.  -->
+
+}
+
+      .block1 ul { 
+    list-style:none; <!--устанавливает все свойства списка-->
+	background:#89918b;
+	text-align:center;
+	padding:0; <!--Устанавливает значение полей вокруг содержимого элемента-->
+	margin:0; <!--Устанавливает величину отступа от каждого края элемента-->
+   }
+       .block1 li {
+	display:inline-block;	<!--с помощью этого cв-ва элементы списка располаг. горизонтально-->
+    font-size: 25px;
+border-right: 1px solid #ff0000;<!--разделители сделаны с помощью Свойствa CSS border. это  универсальное свойство для указания всех персональных свойств границ за раз-->	
+   }	 
+     </style>
+
+</HEAD>
+<BODY>
+<div class="highlight">
+<table>
+  <tr>
+    <td><a href="https://ya.ru">текст ссылки 1</a></td> <!--эл-ты располаг.горизонтально т.к. наход. в ячейках таблицы-->
+  
+  
+     <td><a href="https://mail.ru">текст ссылки 2</a></td>
+  
+  
+    <td><a href="https://google.ru">текст ссылки 3</a></td> 
+  
+  
+     <td><a href="https://bing.com">текст ссылки 4</a></td>
+	 
+	 <td><a href="https://gmail.com">текст ссылки 5</a></td>
+  </tr>
+</table>
+</div>
+<div  class="block1">
+<table>
+  <ul>
+     <li><a href="https://ya.ru">текст ссылки 1</a></li>
+
+     <li><a href="https://mail.ru">текст ссылки 2</a></li>
+
+     <li><a href="https://google.ru">текст ссылки 3</a></li>
+	 
+	 <li><a href="https://bing.com">текст ссылки 4</a></li>
+	 
+	 <li><a href="https://gmail.com">текст ссылки 5</a></li>
+
+</table>
+</div>
+</BODY>
+</HTML>

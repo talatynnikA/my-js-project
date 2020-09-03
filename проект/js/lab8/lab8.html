@@ -1,0 +1,66 @@
+<html>
+<head>
+		<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+</head>
+ <style type="text/css">
+ 	 body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+ p {
+ 	font-family: fantasy;
+ 	font-size: 200%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+   }
+   span {
+   	font-family: fantasy;
+   	font-size: 200%;
+   	color: rgb(255, 255, 255); /* Цвет текста */
+   }
+ </style>
+<body>
+privet
+<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+<script type='text/javascript'>
+	function textChange() {
+		document.getElementById('text').style.backgroundColor='#BDBDBD';
+		document.getElementById('text').style.color='Yellow';
+
+	}
+	function textReturn() {
+		
+		document.getElementById('text').backgroundColor='#F1F8E0';
+		document.getElementById('text').style.color='White';
+
+	}
+
+	function Change2() {
+		document.getElementById('text2').style.fontSize = '45px';
+	}
+	function go() {
+		document.getElementById('elp').src='matem2.png';
+	}
+	function texttoimg() {
+		document.getElementById('text3').innerHTML='<img src="BONK.jpg">';
+	}
+	function go2() {
+		document.getElementById('cat').src='BONK.jpg';
+	}
+
+</script>
+ 		<p id='text' onmouseover='textChange()'onmouseout="textReturn()">Задание №1. изменение цвета при наведении мыши(onmouseover, св-во style.color)</p>
+
+ 		<p id="text2" onclick="Change2()"> Задание №2. изменение шрифта слова щелчком мыши.(onclick, св-во style.fontSize)</p>
+
+ 		<p id="text3" onclick="texttoimg()">Задание №3. изменение текста на изображение</p>
+
+ 		<p>задание №4. Изменение картинки на другую при нажатии мыши</p>
+ 		<img src="matem.png" width="200" height="150" id='elp' onclick="go()" />
+ 		<br><br>
+ 		<span ondblclick="style.border='3px solid #BDBDBD'" onclick="style.border='0px'"> задание №5. событие при двойном нажатии</span>
+ 		<p>Задание №6 . Изменение размеров при наведении</p>
+ 		<p><img src="pixels.jpg" width="100" height="150" onmouseover="width=350" onmouseout="width=200"/></p>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!Doctype html>
+<html>
+<head><meta charset="UTF-8" name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=0">
+	<title>MAKET_FLEX</title>
+	<style>
+	.container-1 {
+	display: flex;
+	align-items: flex-start;/*<!--элементы выравниваются от начала главной оси-->*/
+	}
+	.container-1 div{
+	padding: 10px; /*внутр отступ*/
+	border: 1px solid black;
+	}
+	.box-1 {
+	background-color: #d24dff;
+	
+	order: 1;
+    flex: 1 1 30%; /*<!--flex — это сокращённая запись трёх свойств, значения по умолчанию которых:
+
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; -->*/
+	}
+	
+	.container-2 {
+    display: flex;
+	margin: auto;
+	  flex-shrink: 3; /*<!--Устанавливает коэффициент сжатия флексов в контейнере-->*/
+	
+	}
+	.container-2 div{
+	padding: 10px;
+	border: 1px solid black;
+	}
+	.box-3 {
+	background-color: #FFA500;
+
+		order: 2;
+    flex: 1 1 30%;
+
+	}
+	.box-4 {
+     flex-wrap: wrap /*<!--Указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк-->*/
+	
+		order: 3;
+    flex: 8 1 85%;
+	}
+	.box-5 {
+	 background-color: #d24dff;
+	flex: 3;
+	}
+	.spisok2 {
+	display:none;
+	order:4;
+	
+	}
+	@media only screen and (max-width: 550px) { /*<!-- медиа запрос. screen -  	Экран монитора.-->*/
+	img{
+	width: 440px;
+	}
+	.container-2 {
+  	flex-direction: column;
+	}
+	.container-1 {
+	display: none;
+	}
+	.spisok2 {
+	display: flex;
+	order:2;
+	}
+	.box-3 {
+	display: flex;
+	background-color: #FFFFFF;
+	}
+	.box-3 li {
+	display:inline-block; <!--с помощью этого cв-ва элементы списка располаг. горизонтально-->
+	}
+ </style>
+</head>
+<body>
+   <div class="container-1">
+	  <div class="box-1">
+	    <h3 style="color: blue"; align='center'> ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h3>
+	  </div>
+	 
+	 
+	</div> 
+	<div class="container-2">
+	 <div class="box-3">
+	    <h3 align='center'>Виды спорта:</h3>
+
+   <ul>
+     <li><a href="https://ya.ru">текст ссылки 1</li>
+     <li><a href="https://mail.ru">текст ссылки 2</a></li>
+     <li><a href="https://google.ru">текст ссылки 3</a></li>
+     <li><a href="https://gmail.com">текст ссылки 4</li>
+	 <li><a href="https://mail.ru">текст ссылки 5</a></li>
+     <li><a href="https://google.ru">текст ссылки 6</a></li>
+
+   </ul>
+	  </div>
+	  <div class="box-4">
+	  <h3 align='center'>ФУТБОЛ</h3>
+		<img align='center' src="C:\Users\Admin\Documents\учебные штуки\ОИТ\2SEM\lab1\images\fytbich.webp" width="200" height="111">
+		<p> Футбол — командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или другими частями тела 
+		(кроме рук) большее количество раз, чем команда соперника. В настоящее время самый популярный и массовый вид спорта в мире.
+		</p>
+		<p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих принципов
+		
+		</p>
+	  </div>
+	 </div> 
+	 <div class="container-1">
+	  <div class="box-1">
+	    <h3 style="color: blue"; align='center'> ГЛАВНОЕ НЕ ПОБЕДА А УЧАСТИЕ!</h3>
+	  </div>
+	 
+
+</body>
+</html>

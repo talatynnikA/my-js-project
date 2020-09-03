@@ -1,0 +1,106 @@
+<html>
+<head>
+			<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+</head>
+<body style="background-color: #3366CC;">
+	<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+<table style="width: 100%;  font-family: fantasy; color: rgb(255, 255, 255);" border="4">
+<tbody>
+<tr style="height: 50.2px;">
+<td style="width: 24%; height: 30.2px; background-color: #FFFFFF; color: #000000">Число</td>
+<td style="width: 25.271%; height: 30.2px; background-color: #FFFFFF; color: #000000">Метод</td>
+<td style="width: 22.729%; height: 30.2px; background-color: #FFFFFF; color: #000000">Результат</td>
+<td style="width: 248%; height: 30.2px; background-color: #FFFFFF; color:#000000">Описание метода</td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 24%; height: 28px;"><div id="a"></div></td>
+<td style="width: 25.271%; height: 28px;"><script type='text/javascript'>document.write('ToExponential(3)');</script></td>
+<td style="width: 22.729%; height: 28px;" id="exp"></td>
+<td style="width: 248%; height: 28px;"><script type='text/javascript'>document.write('представляет число в экспоненциальной форме');</script></td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 24%; height: 34px;"><div id="aa"></div></td>
+<td style="width: 25.271%; height: 34px;"><script type='text/javascript'>document.write(' toFixed(3)');</script></td>
+<td style="width: 22.7%; height: 34px;" id="fix"></td>
+<td style="width: 248%; height: 34px;"><script type='text/javascript'>document.write('представляет число в форме с фиксированным количеством цифр после точки');</script></td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 24%; height: 34px;"><div id="aaa"></div></td>
+<td style="width: 25.271%; height: 34px;">toPrecision(5)</td>
+<td style="width: 22.729%; height: 34px;" id="pre"></td>
+<td style="width: 248%; height: 34px;"><script type='text/javascript'>document.write('представляет число с заданным общим количеством значащих цифр');</script></td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 24%; height: 34px;"><div id="aaaa"></div></td>
+<td style="width: 25.271%; height: 34px;">toString(5)</td>
+<td style="width: 22.729%; height: 34px;" id="st"></td>
+<td style="width: 248%; height: 34px;"><script type='text/javascript'>document.write('возвращает строковое представление числа в системе счисления с указанным основанием');</script></td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 24%; height: 34px;"><div id="b"></div></td>
+<td style="width: 25.271%; height: 34px;"><script type='text/javascript'>document.write('ToExponential(3)');</script></td>
+<td style="width: 22.729%; height: 34px;"  id="exp1"></td>
+<td style="width: 248%; height: 34px;"><script type='text/javascript'>document.write('представляет число в экспоненциальной форме');</script></td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 24%; height: 34px;"><div id="bb"></div></td>
+<td style="width: 25.271%; height: 34px;"><script type='text/javascript'>document.write(' toFixed(3)');</script></td>
+<td style="width: 22.729%; height: 34px;"  id="fix1"></td>
+<td style="width: 248%; height: 34px;"><script type='text/javascript'>document.write('представляет число в форме с фиксированным количеством цифр после точки');</script></td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 24%; height: 34px;"><div id="bbb"></div></td>
+<td style="width: 25.271%; height: 34px;">toPrecision(3)</td>
+<td style="width: 22.729%; height: 34px;"  id="pre1"></td>
+<td style="width: 248%; height: 34px;"><script type='text/javascript'>document.write('представляет число с заданным общимколичеством значащих цифр');</script></td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 24%; height: 34px;"><div id="bbbb"></div></td>
+<td style="width: 25.271%; height: 34px;">toString(3)</td>
+<td style="width: 22.729%; height: 34px;"  id="st1"></td>
+<td style="width: 248%; height: 34px;"><script type='text/javascript'>document.write('возвращает строковое представление числа в системе счисления с указанным основанием');</script></td>
+</tr>
+
+</tbody>
+</table>
+    <meta charset="utf-8">
+	<script type='text/javascript'>
+	table();
+ 
+        function table() {
+		var a = new Number(34.21); //дробное
+		console.log(a);
+		document.getElementById("a").innerHTML=a;
+		document.getElementById("aa").innerHTML=a;
+		document.getElementById("aaa").innerHTML=a;
+		document.getElementById("aaaa").innerHTML=a;
+		
+        var b= new Number(27); //целое
+		document.getElementById("b").innerHTML=b;
+		document.getElementById("bb").innerHTML=b;
+		document.getElementById("bbb").innerHTML=b;
+		document.getElementById("bbbb").innerHTML=b;
+		var toExpo=a.toExponential(3); 
+		document.getElementById("exp").innerHTML=toExpo;
+		var toSt=a.toString(3);
+		document.getElementById("st").innerHTML=toSt;
+		var toFix=a.toFixed(5);
+		document.getElementById("fix").innerHTML=toFix;
+		var toPrecis=a.toPrecision(5);
+		document.getElementById("pre").innerHTML=toPrecis;
+		
+		
+		var toExpo1=b.toExponential(3);
+		document.getElementById("exp1").innerHTML=toExpo1;
+        var toSt1=b.toString(3);
+		document.getElementById("st1").innerHTML=toSt1;
+		var toFix1=b.toFixed(3);
+		document.getElementById("fix1").innerHTML=toFix1;
+		var toPrecis1=b.toPrecision(3);
+		document.getElementById("pre1").innerHTML=toPrecis1;
+		}	
+	    </script>
+</body>
+</html>

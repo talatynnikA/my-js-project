@@ -1,0 +1,193 @@
+<html>
+<head>
+      <link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+  <link rel="stylesheet" href="styles.css">
+<script type='text/javascript'>
+function fun1() {
+ alert('Вас приветствует учебный центр');
+}
+function fun3() {
+ x=prompt('Введите имя:', 'Имя');
+ document.write('<span class="txtwrite">Добро пожаловать на курсы, </span>'+ x);
+ }
+function fun2() {
+ if (confirm('Хотите стать Web-дизайнером?')){
+  alert("Учите стили CSS и JavaScript!");
+}
+else
+{alert("Упускаете время!");
+}
+}
+function fun4() {
+var g=17;
+var k=50;
+var h = g+k
+console.log(h);
+document.write(h);
+}
+function fun5() {
+let b = "17"+"50";
+ //alert
+ document.write(b);
+}
+function fun6() {
+//alert
+document.write( '17' + 50 );
+}
+function fun7() {
+//alert
+document.write( 17 + '50' );
+}
+function fun7() {
+//alert
+document.write('<span class="txtwrite">Результатом сложения строки и числа всегда будет "1750"</span>');
+}
+function fun8() {
+var x=6; 
+var y=12;
+var f;
+var q;
+f=35*y-25*x/5+232;
+q=8*y/x+5*x/y-43*6;
+document.write("f=",f);
+document.write("<br>");
+document.write("q=",q);
+document.write("<br>");
+document.write("ostatok=",f%q);
+}
+function fun9() {
+b=prompt('Введите число:', '0');
+if ((b<20 | b>40) & (b!=15 | b % 5 == 0)) {
+//alert
+document.write('Правильное значение, '+ b);
+}
+else {
+ //alert
+ document.write('неправильное значение');
+}
+
+}
+function fun10() {
+var hour = 9;
+
+if (hour < 10 || hour > 18) {
+  //alert
+  document.write( 'Офис до 10 или после 18 закрыт' );
+}
+}
+
+function fun11() {
+p=prompt('Введите первое число:', '0');
+m=prompt('Введите второе число:', '0');
+if (p>m) {
+alert('Первое число больше второго');
+ }
+ else if (p<m){
+ alert('Первое число меньше второго');
+ }
+ else {
+ alert('числа равны');
+ }
+}
+
+function fun12() {
+let day_of_week=prompt('Введите номер дня:', '1');
+
+switch (day_of_week) {
+	case '1':
+		alert("Today is Monday");
+		break;
+	case '2':
+		alert("Today is Tuesday");
+		break;
+	case '3':
+		alert("Today is Wednesday");
+		break;
+	case '4':
+		alert("Today is Thursday");
+		break;
+	case '5':
+		alert("Today is Friday");
+		break;
+	case '6':
+		alert("Today is Saturday");
+		break;
+	case '7':
+		alert("Today is Sunday");
+		break;   
+	default:
+    		alert( "Нет таких дней!" );  
+	}
+}
+function fun13() {
+try {
+    s=prompt('Введите число 10');
+    if (s==10) {
+       alert('вы ввели right 4исло');
+       }
+ else {
+   throw 'ошибка!'; // создание ошибки
+        } 
+} 
+catch (e) {
+   // инструкции для работы с ошибками
+   console.error(e); 
+   alert(e)
+      }
+}
+function messageWrite()
+            {
+                document.write('<span class="primer">'+"текст"+'</span>');
+            }
+</script>
+</head>
+ <style type="text/css"> 
+   input { 
+    font-family: Arial; /* Гарнитура шрифта */ 
+    font-size: 150%; /* Размер текста */ 
+    font-weight: lighter; /* Светлое начертание */
+    color:darkred;	
+   }
+ .txtwrite {
+    color: red;
+    font: 20pt Arial;
+    text-align: center;
+}
+.primer {color: red;
+font: 14pt; 
+}
+  </style>
+<body>
+  <br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+<input type='button' value='Окно alert' onclick='fun1()' />
+<input type='button' value='Окно promt' onclick='fun3()' />
+<input type='button' value='Окно confirm' onclick='fun2()' />
+<h1>сложение чисел 17 и 50</h1>
+
+<input type='button' value='результат' onclick='fun4()' />
+<h1 font-weight: bold>сложение строк 17 и 50</h1>
+
+<input type='button' value='результат' onclick='fun5()' />
+<h1>сложение строки 17 и  числа 50</h1>
+<input type='button' value='результат' onclick='fun6()' />
+<h1>сложение числа 17 и строки 50</h1>
+<input type='button' value='результат' onclick='fun6()' />
+<h1>ВЫВОД</h1>
+<input type='button' value='результат' onclick='fun7()' />
+<h1>задание 3</h1>
+<input type='button' value='результат' onclick='fun8()' />
+<h1>задание 4</h1>
+<input type='button' value='результат' onclick='fun9()' />
+<h1>логические операторы</h1>
+<input type='button' value='результат' onclick='fun10()' />
+<h1>задание 5</h1>
+<input type='button' value='результат' onclick='fun11()' />
+<h1>задание 6</h1>
+<input type='button' value='результат' onclick='fun12()' />
+<h1>задание 7</h1>
+<input type='button' value='результат' onclick='fun13()' />
+<h1>задание 8</h1>
+<input type='button' value='результат' onclick='messageWrite()' />
+</body>
+</html>

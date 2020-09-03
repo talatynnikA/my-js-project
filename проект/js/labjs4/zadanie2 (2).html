@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="../roket.ico" type="image/png">
+</head>
+ <style type="text/css">
+  body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+  .txtwrite {
+    font-family: fantasy;
+  font-size: 100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+  }
+
+  </style>
+<body>
+  <br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+<script type='text/javascript'>
+function Student(name,surname,fizika,matem,inform,sredn){
+ var name;
+ var surname;
+
+ this.name=name;
+this.surname=surname;
+this.fizika=fizika;
+this.matem=matem;
+this.inform=inform;
+
+this.calc_sredn=function calc_sredn() {
+   this.sredn=(this.fizika+this.matem+this.inform)/3;
+   //document.write("Средний балл  " + this.name + " равен " + this.sredn + "<br\>");
+   }
+this.calc_sredn();
+//console.log(this.calc_sredn()); 
+ }
+      //st1.name=x;
+      //st1.surname=y;
+	  //st1.sr_bal(1);
+ st1= new Student("Артём","Талатынник",8,7,10);
+ alert('Добро пожаловать , '+ st1.name +" " + st1.surname);
+ document.write('Добро пожаловать , '+ st1.name," " + st1.surname + "<br\>");
+ 
+ document.write(" <br\>",st1.name+ " ",st1.surname+ " ",st1.fizika+ " ",st1.matem+ " ",st1.inform+ " ",st1.sredn+ " <br\>");
+ document.write("Средний балл  " + st1.name + " равен " + st1.sredn + "<br\>");
+
+ st2= new Student("Валерий","Сергеевич",6,7,8);
+ document.write(" <br\>",st2.name+ " ",st2.surname+ " ",st2.fizika+ " ",st2.matem+ " ",st2.inform+ " <br\>");
+ 
+ st3= new Student("Алексей", "Бурим",10,9,7);
+ document.write(" <br\>",st3.name+ " ",st3.surname+ " ",st3.fizika+ " ",st3.matem+ " ",st3.inform+ " <br\>");
+ 
+ st4= new Student("Егор", "Холод",7,6,7);
+ document.write(" <br\>",st4.name+ " ",st4.surname+ " ",st4.fizika+ " ",st4.matem+ " ",st4.inform+ " <br\>");
+ document.write(" <br\>Добавим новое свойство объекту и выведем результат:");
+ Student.prototype.gruppa=this.gruppa;//C помощью prototype добавим объекту свойство группа
+ st1.gruppa = 2;// или  st1.[‘gruppa’]=2.
+ st2.gruppa = 1;
+ st3.gruppa = 3;
+ st4.gruppa = 4;
+ document.write(" <br\>",st1.name+ " ",st1.surname+ " ",st1.fizika+ " ",st1.matem+ " ",st1.inform+ " ",st1.sredn+ " ",st1.gruppa + "<br\>");
+ 
+  document.write(st2.name+ " ",st2.surname+ " ",st2.fizika+ " ",st2.matem+ " ",st2.inform+ " ",st2.sredn+ " ",st2.gruppa + "<br\>");
+  
+  document.write(st3.name+ " ",st3.surname+ " ",st3.fizika+ " ",st3.matem+ " ",st3.inform+ " ",st3.sredn+ " ",st3.gruppa + "<br\>");
+  document.write(st4.name+ " ",st4.surname+ " ",st4.fizika+ " ",st4.matem+ " ",st4.inform+ " ",st4.sredn+ " ",st4.gruppa + "<br\>");
+  
+  //проверка наличия свойств
+   document.write("<br>");
+document.write("имеется ли проверить, есть ли свойство spec у объекта gr1: ");
+document.write('spec' in st1)
+document.write("<br>");
+
+document.write("тип свойств созданых объектов(name,surname,fizika,matem,inform,sredn) : <br>");
+  document.write("st1<br>"); 
+    document.write(typeof st1.name+"<br>");
+    document.write(typeof st1.surname+"<br>");
+	document.write(typeof st1.fizika+"<br>");
+    document.write(typeof st1.matem+"<br>");
+	document.write(typeof st1.inform+"<br>");
+	document.write(typeof st1.sredn+"<br>");
+  document.write("st2<br>");
+	document.write(typeof st2.name+"<br>");
+    document.write(typeof st2.surname+"<br>");
+	document.write(typeof st2.fizika+"<br>");
+    document.write(typeof st2.matem+"<br>");
+	document.write(typeof st2.inform+"<br>");
+	document.write(typeof st2.sredn+"<br>");
+  document.write("st3<br>");
+	document.write(typeof st3.name+"<br>");
+    document.write(typeof st3.surname+"<br>");
+	document.write(typeof st3.fizika+"<br>");
+    document.write(typeof st3.matem+"<br>");
+	document.write(typeof st3.inform+"<br>");
+	document.write(typeof st3.sredn+"<br>");
+  document.write("st4<br>");
+	document.write(typeof st4.name+"<br>");
+    document.write(typeof st4.surname+"<br>");
+	document.write(typeof st4.fizika+"<br>");
+    document.write(typeof st4.matem+"<br>");
+	document.write(typeof st4.inform+"<br>");
+	document.write(typeof st4.sredn+"<br>");
+</script>
+ 
+</body>
+</html>

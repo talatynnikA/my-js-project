@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <?xml-stylesheet type="text/css" href="1.css"?> 
+<FACULTY>
+	<SPECIALIZATION>
+		<NAME>БГТУ</NAME>
+		<TIME>320</TIME>
+		<EXAM>45</EXAM>
+		<PAGES>МИНСК</PAGES>
+		<PASSING></PASSING>
+	</SPECIALIZATION>
+	<SPECIALIZATION>
+		<NAME>БНТУ</NAME>
+		<TIME>326</TIME>
+		<EXAM>30</EXAM>
+		<PAGES>МИНСК</PAGES>
+		<PASSING></PASSING>
+	</SPECIALIZATION>
+	<SPECIALIZATION>
+		<NAME>БГУИР</NAME>
+		<TIME>340</TIME>
+		<EXAM>50</EXAM>
+		<PAGES>МИНСК</PAGES>
+		<PASSING></PASSING>
+	</SPECIALIZATION>
+	<SPECIALIZATION>
+		<NAME>БГУ</NAME>
+		<TIME>330</TIME>
+		<EXAM>30</EXAM>
+		<PAGES>МИНСК</PAGES>
+		<PASSING></PASSING>
+	</SPECIALIZATION>
+</FACULTY>

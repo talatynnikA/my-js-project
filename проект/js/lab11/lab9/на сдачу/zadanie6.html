@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="../roket.ico" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <title>6</title>
+</head>
+<style type="text/css">
+ body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+#menuname { 
+  position: relative;
+  background-color: white;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  border: 7px solid red;
+  text-align: center;
+}
+
+p {
+  margin-top: 0px;
+  background-color: white;
+  border-radius: 10px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  border: 6px solid yellow;
+}
+
+#poinst {
+  display: none;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   top: 1%;
+    left: 10%;
+    overflow: auto;
+}
+
+#menuname2 { 
+  position: absolute;
+  background-color: white;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  border: 7px solid red;
+  text-align: center;
+
+}
+.parent2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   top: 10%;
+    left: 20%;
+    overflow: auto;
+}
+ </style>
+<body>
+  <br><input type="button" style="width: 300px" onclick="window.location='../../../../main/main.html'" value="На главную"/><br>
+
+  <div id="nav">
+
+    <div id="menu">
+      <p id="menuname">Меню</p>
+
+        <div id='points'>
+          <p>1 подменю</p>
+          <p>2 подменю</p>
+          <p>3 подменю</p>
+		  <p>4 подменю</p>
+          <p>5 подменю</p>
+        </div>
+      </div>
+
+    </div>
+
+<div class="parent2">
+<div id="menu">
+      <p id="menuname2">Меню2</p>
+
+        <div id='points2'>
+          <p>1 подменю</p>
+          <p>2 подменю</p>
+          <p>3 подменю</p>
+      <p>4 подменю</p>
+          <p>5 подменю</p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+  <script>
+  $(document).ready(function() {
+  $("#menuname").click(function() {
+    $("#points").slideToggle(1000)
+  })
+})
+   $(document).ready(function() {
+  $("#menuname2").click(function() {
+    $("#points2").slideToggle(1000)
+  })
+})
+</script>
+</body>
+</html>

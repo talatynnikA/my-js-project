@@ -1,0 +1,87 @@
+<head>
+      <link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+</head>
+ <style type="text/css">
+ 	body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+ 	.txtwrite {
+ 		font-family: fantasy;
+  font-size: 100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+ 	}
+
+ </style>
+<body>
+  <br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+<script type='text/javascript'>
+let arr = ["t", "e", "s", "t", "o", "q"];
+var a;
+var b;
+var c;
+var d;
+var e;
+var f;
+var g;
+var h;
+var i;
+var j;
+a = Math.pow(Math.E,3);
+b = arr.pop(5);//удаляет последний элемент массива
+c = arr.concat([3, 4]);
+d = arr.slice(1, 3);
+e = arr.push("privet");// добавляет в конец
+f = arr.shift();//– удаляет первый элемент
+g = Math.round(8.8005553535);
+h = Math.floor(8.8005553535);
+i = arr.slice(2, 4);
+j = arr.sort();
+array1 = new Array();
+array1[0] = a;
+array1[1] = b;
+array1[2] = c;
+array1[3] = d;
+array1[4] = e;
+array1[5] = f;
+array1[6] = g;
+array1[7] = h;
+array1[8] = i;
+array1[9] = j;
+
+var index;
+for (index = 0; index < array1.length; index++) {
+  document.write(array1[index]);
+  document.write("<br>");
+}
+matem1 = array1.slice(0,1);
+matem2 = array1.slice(6,8);
+matem = matem1.concat(matem2);
+matem.push( Math.PI );
+document.write("<span class='txtwrite'> массив с методом Math: ");
+document.write("<br>");
+for (index = 0; index < matem.length; index++) {
+  document.write(matem[index]);
+  document.write("<br>");
+}
+var onlyAr = new Array();
+onlyAr1 = array1.slice(1,6);
+onlyAr2 = array1.slice(8,10);
+onlyAr = onlyAr1.concat(onlyAr2);
+onlyAr.unshift( arr.unshift(-2, -1) );// добавляет в начало массива
+document.write("<span class='txtwrite'> массив с методом array: ");
+document.write("<br>");
+
+for (index = 0; index < onlyAr.length; index++) {
+  document.write(onlyAr[index]);
+  document.write("<br>");
+  console.log(onlyAr[index]);
+}
+
+</script>
+</body>
+</html>

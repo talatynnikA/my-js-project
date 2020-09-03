@@ -1,0 +1,116 @@
+<HTML>
+<HEAD>
+		<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+<TITLE>Моя первая страница</TITLE>
+</HEAD>
+ <style type="text/css">
+    body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+    .txtwrite {
+        font-family: fantasy;
+  font-size: 100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+    }
+
+ </style>
+<BODY>
+<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+<h1>Я, <a href="лаб1 задание 2.html">Талатынник Артём Дмитриевич</a>, изучаю <font color="red">HTML</font> и CSS</h1>
+
+<h2>Заголовок текста</h2>
+
+<h3>Все улыбались</h3>
+<div> <strong><p style='font-size:20px ; font-weight:100; font-family: Geneva;'>
+Он никого разглядеть толком не мог - 
+теперь они все улыбались, а тогда, когда он
+ имел с ними дело, они испытывали страдания.
+ Теперь они вновь <span id=80 style = "color:red">загорели и окрепли, а когда</span>
+ их привозили к нему, они были бледными и 
+ худыми. Теперь они сдерживали своих коней, 
+ а тогда они лежали, или их вводили под руки,
+ или вносили на носилках. Разве можно было 
+ теперь понять, кому их этих всадников он 
+ "Сохранил возраст"? </p></strong></div>
+ 
+ <h3>Он делал своё дело</h3>
+<div><i><strong><p style='font-size:30px ; font-weight:150; font-family: Arial;'>В сущности, это было неважно. Важно было
+другое - он делал тут своё дело. Делал всегда, 
+делал всеми <span id = 'sspan' style = "color:yellow">силами. И люди понимали</span> это.
+Наверное, можно было оперировать лучше, 
+чем он, но все-таки он здесь принес 
+"некоторую" пользу.</i></div>
+
+<h3>Рекомендация специалистов</h3>
+<div><u><p style='font-size:25px ; font-weight:200; font-family: Helvetica;'>Специалисты рекомендуют не передавать и не 
+сообщать платежные реквизиты, <span style="color: lightblue;">полный номер карточки</span> и срок ее действия, логин и пароль к интернет-банку, иную персональную
+ информацию кому бы то ни было. Знакомый человек в интернете может оказаться «ненастоящим», так что проверяйте — позвоните,
+ например.</p></u></div>
+ <h2>список</h2>
+	<OL>
+                <li> element 1</li>
+                <ul type="disc"><li>  element 1.1</li>
+				<li>  element 1.2</li></ul>
+				<li> element 2</li>
+				<ul type="square"><li> element 2.1</li>
+				<li> element 2.2</li>
+				<li> element 2.3</li></ul>
+				<li> element 3</li>
+				<ul><li> element 3.1</li>
+				<li> element 3.2</li></ul>
+				</OL>
+<th><h2 style='font-size:20px ; font-weight:100; font-family: Geneva;'>Заголовок таблицы<h2></th>
+
+<table border="1">
+    <tr>
+        <td>фио</td>
+        <td colspan="3">талатынник артем дмитриевич</td>
+    </tr>
+    <tr>
+        <td><a><img src="голубь.png" width="50" height="50"></a></td>
+        <td colspan="3">адрес ул мирошниченко, д.3б, кв 95<div>фио</td>
+    </tr>
+    <tr>
+        <td rowspan="6">1 семестр 2016/2017 уч. года</td>
+        <td>дата</td>
+        <td>предмет</td>
+        <td>оценка</td>
+    </tr>
+    <tr>
+        <td>31.12.2019</td>
+        <td>оаип</td>
+        <td id = 1>9</td>
+    </tr>
+    <tr>
+        <td>05.01.2020</td>
+        <td>физика</td>
+        <td id = 2>8</td>
+    </tr>
+    <tr>
+        <td>11.01.2020</td>
+        <td>оит</td>
+        <td id = 3 >7</td>
+    </tr>
+    <tr>
+        <td>16.01.2020</td>
+        <td>математика</td>
+        <td id = 4 >6</td>
+    </tr>
+    <tr>
+        <td>22.01.2020</td>
+        <td>алоцвм</td>
+        <td id = 5 >5</td>
+    </tr>
+</table>
+<script src="script.js"></script>
+<input type="button" style="width: 300px"onclick="alert(b)"value="span1"/>
+ <input type="button" style="width: 300px"onclick="alert(span2.textContent)"value="span2"/>
+ <input type="button" style="width: 300px"onclick="alert(span3)"value="span3"/>
+ <input type="button" style="width: 300px"onclick="alert(sredn)"value="средний балл"/>
+</BODY>
+</HTML>

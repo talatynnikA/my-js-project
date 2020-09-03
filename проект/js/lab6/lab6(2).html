@@ -1,0 +1,141 @@
+<html>
+<head>
+		<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+</head>
+ <style type="text/css">
+    body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+    .txtwrite {
+        font-family: fantasy;
+  font-size: 100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+    }
+
+ </style>
+<body>
+privet
+<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+<script>
+   var window1;
+ 
+ function zadanie1(){
+
+  window1 = window.open("about:blank"); 
+
+  window1.document.title = "Новая страница";
+  }
+  function zadanie12() {
+  window1.close();
+  }
+
+  function zadanie13() {
+  window1.document.write(" имя страницы: " + window1.document.title);
+  }
+
+  
+</script>
+
+<input type="button" style="width: 300px" onclick="zadanie1()" value="открыть стр"/>
+<input type="button" style="width: 300px" onclick="zadanie13()" value="текст на стр"/>
+<input type="button" style="width: 300px" onclick="zadanie12()" value="закрыть стр"/>
+
+<table border="12px" width="753px"  cellspacing="8px" cellpadding="10px" bgcolor="#338696">
+    <tr>
+        <td>Свойство</td>
+        <td>Значение</td>
+    </tr>
+    <tr>
+        <td>Информация о браузере</td>
+        <td><script type='text/javascript'>
+		
+		document.write(navigator.userAgent);
+		</script>
+		</td>
+    </tr>
+    <tr>
+        <td>Версия браузера</td>
+        <td><script type='text/javascript'>
+	
+		document.write(navigator.appVersion);
+		</script>
+		</td>
+    </tr>
+    <tr>
+        <td>Название браузера</td>
+        <td><script type='text/javascript'>
+		
+		document.write(navigator.appName);
+		</script></td>
+    </tr>
+    <tr>
+        <td>Кодовое название браузера</td>
+        <td><script type='text/javascript'>
+		
+		document.write(navigator.appCodeName);
+		</script></td>
+    </tr>
+    <tr>
+        <td>ОС пользователя</td>
+        <td><script type='text/javascript'>
+	
+		document.write(navigator.platform);
+		</script></td>
+    </tr>
+	    <tr>
+        <td>Включена ли поддержка Java</td>
+        <td><script type='text/javascript'>
+		
+		document.write(navigator.javaEnabled());
+		</script>
+		</td>
+    </tr>
+    <tr>
+        <td>ширина и высота окна</td>
+        <td><script type='text/javascript'>
+		
+		document.write(screen.width + " x " + screen.height);
+		</script></td>
+    </tr>
+    <tr>
+        <td>Глубина цвета</td>
+        <td><script type='text/javascript'>
+		
+		document.write(screen.colorDepth);
+		</script></td>
+    </tr>
+    <tr>
+        <td>К-во посещ. ранее URL</td>
+        <td><script type='text/javascript'>
+		
+		document.write(history.length);
+		</script></td>
+    </tr>
+	<td>URL текущего документа</td>
+        <td><script type='text/javascript'>
+		
+		document.write(location.href);
+		</script></td>
+    </tr>
+    <tr>
+        <td>путь к загруженному документy</td>
+        <td><script type='text/javascript'>
+		
+		document.write(location.pathname);
+		</script></td>
+    </tr>
+    <tr>
+        <td>имя домена загруженного документ</td>
+        <td><script type='text/javascript'>
+		
+		document.write(location.host);
+		</script></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="anyURI">
+	<group>
+	<faculty>Факультет Информационных технологий</faculty>
+		<SURNAME>Курлюта</SURNAME>
+		<NAME>Сергей</NAME>
+		<MARK>4</MARK>
+		<YEAR>2001</YEAR>
+	</group>
+	</root

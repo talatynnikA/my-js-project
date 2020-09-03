@@ -1,0 +1,76 @@
+<html>
+<head>
+<link rel="shortcut icon" href="../roket.ico" type="image/png">
+</head>
+ <style type="text/css">
+ 	 body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+ p {
+ 	font-family: fantasy;
+ 	font-size: 200%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+   }
+   span {
+   	font-family: fantasy;
+   	font-size: 200%;
+   	color: rgb(255, 255, 255); /* Цвет текста */
+   }
+ </style>
+<body>
+privet
+<br><input type="button" style="width: 300px" onclick="window.location='../../../main/main.html'" value="На главную"/><br>
+
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type='text/javascript'>
+	$(document).ready(function(){
+
+		$("p#text").mouseover(function(){
+			$("p#text").css("color","yellow");
+			$("p#text").css("background-color","#BDBDBD");
+		}).mouseout(function(){
+			$("p#text").css("color","white");
+			$("p#text").css("background-color","#3366CC");
+		});
+
+		$("p#text2").click(function(){
+			$("p#text2").css("font-size",45);});
+
+		$("div#pic").bind("click", function(){
+			div = document.getElementById('pic');
+			div.innerHTML = "<img height = 200 src = 'BONK.jpg'>"
+			
+		});
+
+		$("img#elp").bind("click", function(){
+			$("img#elp").attr("src","matem2.png");});
+
+		$("span#zad5").dblclick(function(){
+			$("span#zad5").css("border",'3px solid #BDBDBD')
+		});
+
+		$("img#zad6").mouseover(function(){
+			$("img#zad6").css("width",350);
+		}).mouseout(function(){
+			$("img#zad6").css("width",200);
+		});
+
+	});
+	
+
+</script>
+ 		<p id='text'>Задание №1. изменение цвета при наведении мыши(onmouseover, св-во style.color)</p>
+
+ 		<p id="text2"> Задание №2. изменение шрифта слова щелчком мыши.(onclick, св-во style.fontSize)</p>
+
+ 		<div id="pic"><p id="text3" >Задание №3. изменение текста на изображение</p></div>
+
+ 		<p>задание №4. Изменение картинки на другую при нажатии мыши</p>
+ 		<img src="matem.png" width="200" height="150" id='elp'  />
+ 		<br><br>
+ 		<span id = "zad5" onclick="style.border='0px'"> задание №5. событие при двойном нажатии</span>
+ 		<p>Задание №6 . Изменение размеров при наведении</p>
+ 		<img id = "zad6" src="pixels.jpg" width="100" height="150" />
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0">
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="main">
+
+	<xs:complexType>
+		<xs:sequence>
+
+		<xs:element nane="uniname" type="xs:string"/>
+		<xs:element nane="reqgpa" type="xs:decimal"/>
+		<xs:element nane="amount" type="xs:decimal"/>
+		<xs:element nane="city" type="xs:string"/>
+
+			</xs:sequence>
+		</xs:complextype>
+	</xs:element>
+</xs:schema>

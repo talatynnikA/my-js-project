@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="xml4.xslt" type="text/xsl"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="anyURI">
+	<group>
+		<SURNAME>Давыдова</SURNAME>
+		<NAME>Нелли</NAME>
+		<MARK>9</MARK>
+		<YEAR>2001</YEAR>
+		 
+	</group>
+	<group>
+		<SURNAME>Ивашкевич</SURNAME>
+		<NAME>Владислав</NAME>
+		<MARK>5</MARK>
+		<YEAR>2002</YEAR>
+		
+	</group>
+	<group>
+		<SURNAME>Астапова</SURNAME>
+		<NAME>Наталья</NAME>
+		<MARK>6</MARK>
+		<YEAR>2000</YEAR>
+	</group>
+	<group>
+		<SURNAME>Курлюта</SURNAME>
+		<NAME>Сергей</NAME>
+		<MARK>4</MARK>
+		<YEAR>2001</YEAR>
+	</group>
+	<group>
+		<SURNAME>Батухтина</SURNAME>
+		<NAME>Диана</NAME>
+		<MARK>8</MARK>
+		<YEAR>2002</YEAR>
+	</group>
+</root>

@@ -1,0 +1,11 @@
+  body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+ h1 {
+  font-family: fantasy;
+  font-size: 100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+   }
+  a {
+     color: rgb(255, 255, 255); /* Цвет текста */
+  }

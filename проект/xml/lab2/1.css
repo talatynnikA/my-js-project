@@ -1,0 +1,54 @@
+FACULTY {
+	 background-color: #3366CC; /* Цвет фона веб-страницы */
+	 border-color:#ff69b4;
+}
+SPECIALIZATION {  display:block; 
+					text-align:center; 
+					margin:10px 20px 10px 20px; 
+					margin-top:12pt;
+					 border-style:double; 
+					 border-color:#fff0f5; 
+					 font-size:15pt
+					color: #fff0f5; /* Цвет фона веб-страницы */}
+
+ NAME { font-family: fantasy;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+ 		font-style:italic;
+  		text-align:center} 
+
+  TIME {  font-family: monospace;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+
+  	display:block; 
+  		text-align:center;
+  		 font-weight:bold; 
+  	 	border-top:double; 
+  		 border-color:#7cfc00} 
+
+ EXAM {  font-family: cursive;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+ 		    display:block; 
+ 		text-align:center; 
+ 		border-top:double;
+ 	 	border-color:#ffa07a} 
+
+ PAGES {  font-family: sans-serif ;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+ 		    display:block;
+  			text-align:center;
+  			 border-top:double;
+   			 border-color:#ffe4b5} 
+
+ PASSING {  font-family: fantasy;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+ 		    display:block; 
+			text-align:center;
+ 			border-top:double; 
+ 			border-color:#8C0088} 
+
+FACULTY {  font-family: fantasy;
+ 		    color: rgb(255, 255, 255); /* Цвет текста */
+ 		    display:block; 
+		margin:50px 100px;
+		 border-style:solid} 
+ 

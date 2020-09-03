@@ -1,0 +1,38 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="../roket.ico" type="image/png">
+</head>
+<style type="text/css">
+    body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+</style>
+<body>
+	<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+	<svg width="1500" height="1500">
+		 <circle cy="70" cx="200" r="50" fill="red" stroke="blue" stroke-width="4" stroke-dasharray="20, 5" stroke-dashoffset="5">
+		  <animate attributeName="cx" from="200" to="400"dur="5s" begin="mouseover"/>
+		  <animate attributeName="r" from="50" to="20" dur="5s" begin="mouseover"/>
+          <animate attributeName="fill" from="yellow" to="red" dur="5s" begin="mouseover"/>
+           
+
+           <animate attributeName="stroke-dasharray" from="70 10"    to="0 2"    dur="5s" begin="mouseover"/>
+          <animate attributeName="stroke-dashoffset"from="25%"      to="60%"    dur="2s" begin="mouseover"/>
+		   </circle>
+
+		   <rect x="40" y="40" width="50" height="25" fill="blueviolet" stroke="gold" stroke-width="5">
+		    <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="10" dur="6s" fill="freeze" begin="mouseover"/>
+		   </rect> 
+
+ <circle cy="170" cx="200" r="50" fill="pink" stroke="black" stroke-width="4" stroke-dasharray="20, 5" stroke-dashoffset="5">
+		 
+          <animate attributeName="stroke-width" from="4" to="20" dur="5s" begin="mouseover"/>
+         
+       
+		   </circle>
+
+	</body>
+</html>

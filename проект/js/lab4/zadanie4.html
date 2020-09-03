@@ -1,0 +1,80 @@
+<html>
+<head>
+        <link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+</head>
+  <style type="text/css">
+    body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+    .txtwrite {
+        font-family: fantasy;
+  font-size: 100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+    }
+
+ </style>
+<body>
+    <br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+<script type='text/javascript'>
+    //s = '<table border="12px" width="753px"  cellspacing="8px" cellpadding="10px" bgcolor="#338696"> <tr><td bgcolor="red">Год</td> <td bgcolor="red">\\\\\</td> <td bgcolor="red">\\\</td> </tr>';
+	
+</script>
+<table border="12px" width="753px"  cellspacing="8px" cellpadding="10px" bgcolor="#338696">
+    <tr>
+        <td>Год</td>
+        <td><script type='text/javascript'>
+		var year = new Date();
+        var year = year.getFullYear();
+		document.write(year);
+		</script></td>
+    </tr>
+    <tr>
+        <td>Месяц</td>
+        <td><script type='text/javascript'>
+		var month1 = new Date();
+        var month = month1.getMonth();
+		document.write(month+1);
+		</script>
+		</td>
+    </tr>
+    <tr>
+        <td>День</td>
+        <td><script type='text/javascript'>
+		var day = new Date();
+        var day = day.getDay();
+		document.write(day);
+		</script>
+		</td>
+    </tr>
+    <tr>
+        <td>Час</td>
+        <td><script type='text/javascript'>
+		var day = new Date();
+        var day = day.getHours();
+		document.write(day);
+		</script></td>
+    </tr>
+    <tr>
+        <td>Минуты</td>
+        <td><script type='text/javascript'>
+		var day = new Date();
+        var day = day.getMinutes();
+		document.write(day);
+		</script></td>
+    </tr>
+    <tr>
+        <td>Секунды</td>
+        <td><script type='text/javascript'>
+		var day = new Date();
+        var day = day.getSeconds();
+		document.write(day);
+		</script></td>
+    </tr>
+</table>
+</body>
+</html>

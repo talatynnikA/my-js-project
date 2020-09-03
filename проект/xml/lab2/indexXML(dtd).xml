@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FACULTY[
+<!ELEMENT FACULTY (NAME, TIME, EXAM, PAGES)>
+<!ELEMENT NAME (#PCDATA)>
+
+<!ELEMENT  TIME (#PCDATA)>
+<!ELEMENT EXAM (#PCDATA)>
+<!ELEMENT PAGES (#PCDATA)>
+]>
+<?xml-stylesheet type="text/css" href="1.css"?>
+<FACULTY>
+
+
+
+<SPECIALIZATION>
+<NAME id="name">BSTU</NAME>
+<TIME id="gpa">320</TIME>
+<EXAM id="EXAM">45</EXAM>
+<PAGES id="PAGES">Minsk</PAGES>
+</SPECIALIZATION>
+
+<SPECIALIZATION>
+<NAME id="name">BNTU</NAME>
+<TIME id="gpa">326</TIME>
+<EXAM id="EXAM">30</EXAM>
+<PAGES id="PAGES">Minsk</PAGES>
+
+    
+
+<NAME id="name">BSUTR</NAME>
+<TIME id="gpa">340</TIME>
+<EXAM id="EXAM">50</EXAM>
+<PAGES id="PAGES">Minsk</PAGES>
+</SPECIALIZATION>
+
+<SPECIALIZATION>
+<NAME id="name">BSU</NAME>
+<TIME id="gpa">330</TIME>
+<EXAM id="EXAM">30</EXAM>
+<PAGES id="PAGES" >Minsk</PAGES>
+
+</SPECIALIZATION>
+
+</FACULTY>

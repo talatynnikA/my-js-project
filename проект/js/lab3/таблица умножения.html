@@ -1,0 +1,36 @@
+<html>
+<head>
+			<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+	<link rel="stylesheet" href="styles.css">
+<script type='text/javascript'>
+var color_td;
+document.write("<table border='6px'>");
+a=prompt('Введите a:');
+b=prompt('Введите b:');
+for(var i = 1; i <= a; i++) {
+
+	document.write("<tr style='height:53px;'>");
+
+	for(var j = 1; j <= b; j++) {
+
+			color_td = "#fff";
+		
+		document.write("<td style='width:67px;background-color:" + color_td + "'>" + i*j + "</td>");
+	}
+	document.write("</tr>");
+}
+
+document.write("</table>");
+</script>
+</head>
+ <style type="text/css">
+body{
+  background-color:#3366CC;
+  font-family: fantasy;
+} 
+ </style>
+<body>
+<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+</body>
+</html>

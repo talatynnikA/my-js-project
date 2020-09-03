@@ -1,0 +1,59 @@
+<html>
+<head>
+		<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+</head>
+ <style type="text/css">
+ 	body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+ 	.txtwrite {
+ 		font-family: fantasy;
+  font-size: 100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+ 	}
+ </style>
+<body>
+	<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+<script type='text/javascript'>
+var a;
+var b;
+var c;
+var d;
+a = 6 * Math.pow(Math.PI,2) + 3 * Math.pow(Math.E,8);
+b = 2 * Math.cos(4) + Math.cos(12) + 8 * Math.pow(Math.E,3);
+c = 3 * Math.sin(9) + Math.log(5) + Math.sqrt(3);
+d = 2 * Math.tan(5) + 6 * Math.PI + Math.sqrt(12);
+array1 = new Array();
+array1[0] = a;
+array1[1] = b;
+array1[2] = c;
+array1[3] = d;
+let i = array1.indexOf(Math.max(...array1));//Метод indexOf() возвращает индекс первого вхождения указанного значения в строковый объект
+let g = array1.indexOf(Math.min(...array1));
+//minIndex = array1.indexOf(min, fromIndex = 0);
+//maxIndex = array1.indexOf(max, fromIndex = 0);
+document.write("<span class='txtwrite'>максимальный элемент: </span>");
+document.write("<br>");
+document.write(Math.max(...array1));
+document.write("<br>");
+document.write("<span class='txtwrite'>Индекс этого элемента: </span>");
+document.write(i);
+document.write("<br>");
+document.write("<span class='txtwrite'>минимальный элемент: </span>");
+document.write("<br>");
+document.write(Math.min(...array1));
+document.write("<br>");
+document.write("<span class='txtwrite'>Индекс этого элемента: </span>");
+document.write(g);
+document.write("<br>");
+//document.write("Индекс минимального элемента: " + minIndex + '<br />');
+//document.write("Индекс максимального элемента: " + maxIndex + '<br />');
+
+</script>
+</body>
+</html>

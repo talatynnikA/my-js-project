@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>
+TEST_ANIM</TITLE>
+<style>
+
+#loading {
+		-webkit-animation: rotation 2s linear;<!-- linear  позволяет плавно анимировать объект-->
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg); <!--Трансформирует элемент, в частности, позволяет его масштабировать, вращать, сдвигать, наклонять, а также комбинировать виды трансформаций.-->
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+.main: {
+border: 2px solid black;
+  display: inline-block; 
+}
+
+
+.dot {
+position: absolute;/*<!-- способ позиционирования элемента: бывает absolute | fixed | relative | static | inherit -->*/
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+ transform: skew(30deg,0deg);
+	position: absolute;
+	left: 70%;
+}
+.dot:hover{
+	transform: scale(0.9,0.8);
+	transition: transform 0.3s;
+}
+
+.block1:hover {
+margin: 20%
+position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s; /*<!--задает сколько должен длиться один цикл анимации.-->*/
+ 
+  
+}
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+.anim1{
+	width: 60px;
+	animation: anim1 7s infinite;<!-- infinite - бесконечная анимация-->
+}
+@keyframes anim1{
+	10%{
+		transform: translate(20px,150px); /*<!--Трансформирует элемент:Сдвигает элемент на заданное значение по горизонтали и вертикали. -->*/
+	}
+	20%{
+		transform: translate(40px,125px);
+	}
+	30%{
+		transform: translate(60px,100px);
+	}
+	40%{
+		transform: translate(90px,120px);
+	}
+	50%{
+		transform: translate(120px,150px);
+	}
+	60%{
+		transform: translate(180px,180px);
+	}
+	70%{
+		transform: translate(230px,120px);
+	}
+	80%{
+		transform: translate(320px,90px);
+	}
+	90%{
+		transform: translate(500px,130px);
+	}
+	100%{
+        transform: translate(700px,100px);
+	}
+}
+</style>
+</HEAD>
+<BODY>
+<div class="main">
+    <img src="images/anim1.gif" alt="" class="anim1" />
+	<div class="block1">square</div>
+	<div class="dot">d</div>
+	<img id="loading" src="C:\Users\Admin\Documents\учебные штуки\ОИТ\2SEM\lab1\images\loading.jpg">
+</div>
+
+</BODY>
+</HTML>

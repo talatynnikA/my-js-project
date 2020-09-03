@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/css" href="1.css"?>
+<FACULTY>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="FACULTY">
+
+	<xs:complexType>
+		<xs:sequence>
+
+		<xs:element nane="SPECIALIZATIONname" type="xs:string"/>
+		<xs:element nane="TIME" type="xs:decimal"/>
+		<xs:element nane="EXAM" type="xs:decimal"/>
+		<xs:element nane="PAGES" type="xs:string"/>
+
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+
+
+<SPECIALIZATION>
+<SPECIALIZATIONname id="name">BSTU</SPECIALIZATIONname>
+<TIME id="gpa">320</TIME>
+<EXAM id="EXAM">45</EXAM>
+<PAGES id="PAGES">Minsk</PAGES>
+</SPECIALIZATION>
+
+<SPECIALIZATION>
+<SPECIALIZATIONname id="name">BNTU</SPECIALIZATIONname>
+<TIME id="gpa">326</TIME>
+<EXAM id="EXAM">30</EXAM>
+<PAGES id="PAGES">Minsk</PAGES>
+</SPECIALIZATION>
+
+    
+<SPECIALIZATION>
+
+<SPECIALIZATIONname id="name">BSUIR</SPECIALIZATIONname>
+<TIME id="gpa">340</TIME>
+<EXAM id="EXAM">50</EXAM>
+<PAGES id="PAGES">Minsk</PAGES>
+</SPECIALIZATION>
+
+<SPECIALIZATION>
+<SPECIALIZATIONname id="name">BSU</SPECIALIZATIONname>
+<TIME id="gpa">330</TIME>
+<EXAM id="EXAM">30</EXAM>
+<PAGES id="PAGES" >Minsk</PAGES>
+
+</SPECIALIZATION>
+
+</FACULTY>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="../roket.ico" type="image/png">
+  <meta charset="UTF-8">
+  <title>3</title>
+</head>
+<style type="text/css">
+ 	 body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+ div {
+ 	font-family: fantasy;
+ 	font-size: 390%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+   }
+  
+ </style>
+<body>
+  <br><input type="button" style="width: 300px" onclick="window.location='../../../../main/main.html'" value="На главную"/><br>
+
+  <img id="image" src="pixels.jpg" height="100px"  style="position: absolute; ">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript">
+
+$(document).ready(function(){
+    
+    $("img#image").click(function()
+      {
+        for (var x = 5; x <= 1500; x+=50) {
+         y = 35 - 50* Math.sin(0.007*x);
+             $("img#image").animate({ top: y, left: x},"fast");
+
+        }
+        for (var x = 1500; x >= 5; x-=50) {
+         y = 35 - 50* Math.sin(0.003*x);
+             $("img#image").animate({ top: y, left: x},"fast");
+
+        }
+
+      });
+    
+
+});
+
+  
+
+  </script>
+</body>
+</html>

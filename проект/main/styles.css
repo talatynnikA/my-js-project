@@ -1,0 +1,30 @@
+.menu-item {
+  border: 2px soild #66CDAA;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-item .submenu {
+  position: absolute;
+  animation: anim 0.5s forwards;
+  border-radius: 4px;
+
+  height: 50px;
+  width: 80px;
+}
+
+.submenup {
+  text-align: center;
+}
+
+@keyframes anim {
+  0% {
+    display: none;
+  }
+  100% {
+    background: rgb(134, 233, 178);
+    cursor: pointer;
+  }
+}

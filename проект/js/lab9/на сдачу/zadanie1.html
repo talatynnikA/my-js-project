@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+	<meta charset="utf-8">
+	<title>1</title>
+</head>
+<style type="text/css">
+ 	 body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+ div {
+ 	font-family: fantasy;
+ 	font-size: 390%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+   }
+  
+ </style>
+<body>
+	<br><input type="button" style="width: 300px" onclick="window.location='../../../main/main.html'" value="На главную"/><br>
+
+	<div id="image">
+		<image src="hollywood3.jpg" width="480" height="480">
+	</div>
+
+	<div id="text">YWOOD</div>
+
+	<script type="text/javascript">
+		var image = document.getElementById("image");
+		image.onmousedown = function(a)
+		{
+			image.style.position = "absolute";
+			move(a);
+			document.onmousemove = function(a)
+			{
+				move(a);
+			}
+			function move(a)
+			{
+				image.style.left = a.pageX + "px";
+				image.style.top = a.pageY + "px";
+			}
+			image.onmouseup = function()
+			{
+				document.onmousemove = null;
+				image.onmouseup = null;
+			}
+		}
+
+		var text = document.getElementById("text");
+
+		text.onmousedown = function(a)
+		{
+			text.style.position = "absolute";
+			move(a);
+			document.onmousemove = function(a)
+			{
+				move(a)
+			}
+			function move(a)
+			{
+				text.style.left = a.pageX + "px";
+				text.style.top = a.pageY + "px";
+			}
+			text.onmouseup = function()
+			{
+				document.onmousemove = null;
+				text.onmouseup = null;
+			}
+		}
+
+	</script>
+</body>
+</html>

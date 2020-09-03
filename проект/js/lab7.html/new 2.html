@@ -1,0 +1,134 @@
+<html>
+<head>
+		<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+</head>
+<title>lab 7</title>
+ <style type="text/css">
+  
+ 	body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+ p {
+ 	font-family: fantasy;
+ 	font-size: 200%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+   }
+   br {
+   	font-family: fantasy;
+   	font-size: 200%;
+   	color: rgb(255, 255, 255); /* Цвет текста */
+   }
+ </style>
+<body>
+privet
+<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+
+  <script type="text/javascript">
+  	function print() {
+  		var form = document.forms['form1'];
+  		var ln = form.elements.lastname;
+  		var naz = document.getElementById('textarea').value;
+  		var isit = document.getElementById('isit');
+  		var poit = document.getElementById('poit');
+  		var poimbs = document.getElementById('poimbs');
+  		var devi = document.getElementById('devi');
+  		var kurs = form.elements.s;
+  		var oit = document.getElementById('oit');
+  		var oap =  document.getElementById('oap');
+  		var history = document.getElementById('history');
+  		var fizika = document.getElementById('fizika');
+  		var matem = document.getElementById('matem');
+
+  	document.write(' <center> ' + naz + ' <br> ' + ' </center> ');
+  	document.write(' <center> ' + '		Студент  ' + ln.value + ' специальность');
+  	   if (isit.selected) {
+  	   	document.write("ИСИТ");
+  	   }
+  	   if (poit.selected) {
+  	   	document.write("ПОИТ");
+  	   }
+  	   if (poimbs.selected) {
+  	   	document.write("ПОИМБС");
+  	   }
+  	   if (devi.selected) {
+  	   	document.write("ДЭиВИ");
+  	   }
+  	   document.write(" курс " + kurs.value + " должен сдавать следующие предметы: ")
+  	   if (oit.checked) {
+  	   	document.write("<br>"+" ОИТ ");
+  	   }
+  	   if (oap.checked) {
+  	   	document.write("<br>"+" ОАП ");
+  	   }
+  	   if (history.checked) {
+  	   	document.write("<br>"+" История ");
+  	   }
+  	   if (fizika.checked) {
+  	   	document.write("<br>"+" Физика ");
+  	   }
+  	   if (matem.checked) {
+  	   	document.write("<br>"+" Математика ");
+  	   }
+  	}
+   function selected() {
+   	div = document.getElementById('selected'); 
+   	let subjects = document.getElementById('subjects1').children;
+   	div.innerHTML += '<form><fieldset>Выбранные предметы<select id="chosen"></select><fieldset></form>';
+   	sel = document.getElementById('chosen');
+   	for (var i = 0; i<subjects.length; i++) {
+   		if (subjects[i].checked) {
+   			opt = document.createElement('option');
+   			opt.innerHTML = subjects[i].value;
+   			sel.appendChild(opt);
+
+   		}
+   	}
+
+   }
+</script>
+<form name="form1">
+	 <fieldset>
+	 	<textarea id = "textarea">Факультет Информационных технологий</textarea>
+	 	<br /> Фамилия: 
+	 	<br /><input type="text" name="lastname" value="Талатынник" /><br />
+	 	<br /> Имя:
+	 	<br /><input type="text" name="firstname" value="Артём" /><br />
+	 	<p>Курс:</p>
+	 	<input type="radio" name="s" value="1" />1
+	 	<input type="radio" name="s" value="2" />2
+	 	<input type="radio" name="s" value="3" />3
+	 	<input type="radio" name="s" value="4" />4
+	 	<p>Специальность</p>
+	 	<select multiple> //множественный выбор
+	 		<option id='isit' value="ИСИТ">ИСИТ</option>
+	 		<option id="poit" value="ПОИТ">ПОИТ</option>
+	 		<option id="poimbs" value="ПОИМБС">ПОИМБС</option>
+	 		<option id="devi" value="ДЭиВИ" selected>ДЭиВИ</option>
+	 	</select>
+	 	<p>Предметы</p>
+	 	<div id=subjects1>
+	 		<input type="checkbox" id="oit"  value="ОИТ" checked> ОИТ
+	 		<input type="checkbox" id="oap"  value="ОАП" checked> ОАП
+	 		<input type="checkbox" id="history"  value="История" > История
+	 		<input type="checkbox" id="fizika"  value="Физика" > Физика
+	 		<input type="checkbox" id="matem"  value=" Математика" > Математика
+
+	 	</div>
+	 	<br/>
+	 	<input type="button" value="Напечатать" onclick="print()">
+	 	<br/>
+	 	<input type="submit" value="submit" onclick="submit">
+	 	<br/>
+	 	<input type="reset" value="reset" onclick="reset">
+	 </fieldset>
+	</form>
+	<br/><button onclick="selected()">Новая форма</button>
+	<div id="selected"></div>
+
+</body>
+</html>

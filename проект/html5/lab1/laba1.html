@@ -1,0 +1,44 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="../roket.ico" type="image/png">
+</head>
+ <style type="text/css">
+    body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+    .txtwrite {
+        font-family: fantasy;
+  font-size: 100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+    }
+
+ </style>
+<TITLE>работа №1 html5</TITLE>
+<script>
+function getCoordinates() {
+navigator.geolocation.getCurrentPosition(showCoordinates);
+}
+function showCoordinates(position) {
+document.write("Широта:" + position.coords.latitude + "<br/>");
+document.write("Долгота:" + position.coords.longitude);
+}
+</script>
+<body>
+	<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+	<p align="center">Я, <mark>Талатынник Артём Дмитриевич</mark>, изучаю HTML5</p>
+<div align="center">
+	<video  src="video.mp4" width="700" height="500" controls="controls"></video>
+</div>
+<div  align="center">
+	<audio src="audio.mp3" controls="controls"> </audio>
+</div>
+
+<p  align="center">Для считывания координат нажмите на кнопку</p>
+<div   align="center">
+<input type="button" value=" Координаты" onclick ="getCoordinates()">
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+  <meta charset="UTF-8">
+  <title>3_zadanie</title>
+</head>
+<style type="text/css">
+ 	 body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+}
+ div {
+ 	font-family: fantasy;
+ 	font-size: 390%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+   }
+  
+ </style>
+<body>
+  <br><input type="button" style="width: 300px; position: absolute; top: 10px; left: 300px;" onclick="window.location='../../../../main/main.html'" value="На главную"/><br>
+
+  <div><img id="image" src="pixels.jpg" height="100px" onclick="Animate()" style="position: absolute; top: 0px; left: 0px;"></div>
+  <script>
+  	function Animate() {
+  let myImage = document.getElementById("image");
+  let X = 0;
+  let Y = 0;
+  let interval = setInterval(animation, 7.6);
+
+  function animation() {
+    if(X == 150) {
+      clearInterval(interval);
+      myImage.style.left = 0 + "px";
+      myImage.style.top = 0 + "px";
+    }
+    else { 
+      if(X >= 0 && X < 150) {
+        X++;
+        Y = Math.pow(X,2) / 500;
+
+      }
+    
+      myImage.style.left = X + "px";
+      myImage.style.top = Y + "px";
+
+    }
+    
+  }
+}
+
+  </script>
+</body>
+</html>

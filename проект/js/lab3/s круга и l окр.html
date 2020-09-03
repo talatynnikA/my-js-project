@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+    <script type='text/javascript'>
+        table();
+ 
+        function table() {
+            var a; // радиус 
+            var b; 
+            var length; // длина окружности
+            var area; // площадь круга
+            a = Number(prompt("Введите a: ")); // преобразование в число
+            if (isNaN(a)) {
+                alert("Строка преобразовалась в NaN. Не число");
+                return;
+            }
+ 
+            b = Number(prompt("Введите b: ")); // преобразование в число
+            if (isNaN(b)) {
+                alert("Строка преобразовалась в NaN. Не число");
+                return;
+            }
+ 
+            s = '<table  style=" font-family: fantasy; color: rgb(255, 255, 255);"border="12px" width="753px"  cellspacing="8px" cellpadding="10px" bgcolor="#3366CC" > <tr><td bgcolor="white" style="color: #000000">Радиус</td> <td bgcolor="white" style="color: #000000">Длина окружности</td> <td bgcolor="white" style="color: #000000">Площадь круга</td> </tr>';
+            do {
+                // новая строка с ячейками
+                length = Math.round(2 * Math.PI * a);
+                area = Math.round(Math.PI * Math.pow(a,2));
+                s += "<tr><td>" + a + "</td><td>" + length + "</td><td>" + area + "</td></tr>";
+                a = a + 0.3; // счётчик
+            }
+            while (a <= b);
+            document.write(s + "</table>");
+        }
+    </script>
+</body>
+</html>

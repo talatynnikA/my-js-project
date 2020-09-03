@@ -1,0 +1,49 @@
+<html>
+<head>
+		<link rel="shortcut icon" href="../roket.ico" type="image/png">
+
+</head>
+  <style type="text/css">
+ 	body{
+    background-color: #3366CC; /* Цвет фона веб-страницы */
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 100%;
+}
+ 	.txtwrite {
+ 		font-family: fantasy;
+  font-size: 100%;
+    color: rgb(255, 255, 255); /* Цвет текста */
+ 	}
+
+ </style>
+<body>
+	<br><input type="button" style="width: 300px" onclick="window.location='../../main/main.html'" value="На главную"/><br>
+
+<script type='text/javascript'>
+mystring = "Талатынник Артём Дмитриевич"; 
+document.write(mystring);
+document.write("<br>");
+document.write("Длина строки: ");
+document.write(mystring.length);
+document.write("<br>");
+document.write("Перевод в верхний регистр с помощью toUpperCase :");
+document.write("<br>");
+document.write(mystring.toUpperCase());
+document.write("<br>");
+document.write("Перевод в верхний регистр с помощью toLowerCase: ");
+document.write("<br>");
+document.write(mystring.toLowerCase());
+document.write("<br>");
+document.write("Соединяем полученные строки: ");
+document.write("<br>");
+mystring1 = mystring.toUpperCase();
+mystring2 = mystring.toLowerCase();
+document.write(mystring1.concat(mystring2));
+document.write("<br>");
+document.write("делаем ФИО: ");
+document.write("<br>");
+document.write(mystring.replace('Талатынник Артём Дмитриевич','ТАД'));
+</script>
+</body>
+</html>
